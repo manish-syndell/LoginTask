@@ -1,0 +1,107 @@
+.mainContainer{
+    /* width: 100vw; */
+    height: 7vh;
+    background-color: #ff0000;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mainContainer nav {
+    display: flex;
+}
+
+.leftBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    /* border: 1px solid black; */
+}
+.leftBox h1{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.leftBox div{
+    position: relative;
+}
+
+.leftBox div input[type="text"]{
+    width: 400px;
+    font-size: 1rem;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.7);
+    outline: none;
+    border-radius: 55px;
+    color: white;
+}
+
+.leftBox div span {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rightBox {
+    width: 50vw;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notification{
+    position: relative;
+    font-size: 1.7rem;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.notification span {
+    position: absolute;
+    color: black;
+    top: 0px ;
+    left: 12px;
+    font-size: 0.5rem;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    padding: 0px 4px;
+    border-radius: 50%;
+
+}
+
+.profile{
+
+    width: 9vw;
+    display:  flex;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+
+}
+
+.profile svg{
+    font-size: 3rem;
+    color: white;
+}
+.profile span{
+
+    color: white;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+
+}

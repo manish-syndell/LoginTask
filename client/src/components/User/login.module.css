@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+.bodyStyle{
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: white;
+    padding: 8px;
+    box-shadow: 5px 5px 15px 1px #d1d1cf,
+        5px 5px 15px 5px #d1d1cf,
+        0px 0px 10px 5px #d1d1cf;
+    /* margin-top: 20px; */
+}
+
+.leftBox img {
+
+    width: 34vw;
+
+}
+
+.rightBox {
+    width: 30vw;
+    height: fit-content;
+    border-top: 1px solid rgb(214, 212, 212);
+    border-right: 1px solid rgb(214, 212, 212);
+    height:auto;
+
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding-top: 18vh;
+    flex-direction: column;
+
+}
+
+.logo img {
+
+    width: 13vw;
+
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bolder;
+    padding: 30px 0px;
+
+}
+
+.iputBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin-top: 30px;
+    
+
+}
+
+.inputfields {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inputfields input {
+
+    width: 320px;
+    font-size: 1rem;
+    color: #6e6e6e;
+    outline: none;
+    padding: 22px 20px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid rgba(214, 212, 212,0.9);
+
+}
+
+.inputfields input:focus ~ span
+{
+    top: 2px;
+    /* transition: 0.5s; */
+}
+.hasValue{
+    top: 2px !important;
+
+}
+
+.inputfields span {
+    font-size: 0.8rem;
+    color: #6f6f74;
+    position: absolute;
+    left: 21px;
+    top: 15px;
+    transition: 0.5s;
+}
+
+.inputfields p {
+    
+    position: absolute;
+    right: 14px;
+    bottom: -6px;
+    cursor: pointer;
+    user-select: none;
+}
+.inputfields p svg{
+    font-size: 1.3rem;
+}
+
+.linkBox{
+    display: flex;
+    width: 360px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    transition: ease 1s;
+    
+}
+.link{
+    font-size: 0.8rem;
+    color: #E5007D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.linkBox div{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color:  #919190; 
+    font-weight: 600;
+}
+
+.linkBox div input[type="checkbox"]{
+    width:17px;
+    height: 17px;
+}
+
+.btn{
+    background-color: #E5007D;
+    margin-top: 20px;
+    width: 360px;
+    padding: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rightBox h3{
+    font-size: 1rem;
+    color: #6e6e6e;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rightBox h3 a{
+    text-decoration: none;
+    color: #6e6e6e;
+}
+
+.rightBox h3 a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,0.8);
+
+
+}
+@media screen and (max-width: 900px){
+
+    .leftBox img {
+
+        width: 350px;
+    
+    }
+    .rightBox {
+        width: 300px;
+    }
+    .logo {
+        
+        padding-top: 20px;
+        
+    }
+    .logo img {
+        width: 50%;
+    }
+    .logo span {
+        font-size: 0.8rem;   
+        font-weight: bolder;
+        padding: 20px 0px;
+    }
+    .iputBox {
+        width: 100%;
+        margin-top: 5px;
+        /* border: 1px solid black; */
+    }
+    .inputfields {
+        width: 90%;
+        overflow-x: hidden;
+        border: 1px solid rgba(214, 212, 212,0.8);
+        border-radius: 10px;
+
+    }
+    .inputfields input {
+        width: inherit;
+        border: none;
+
+    }
+
+    .linkBox{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .btn {
+        width: 90%;
+    }
+
+    .rightBox h3{
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+
+    .container{
+        width: 90vw;
+    }
+
+    .leftBox {
+
+        display: none;
+    
+    }
+    .rightBox {
+        min-width: 100%;
+        border :1px solid rgb(214, 212, 212);
+        
+    }
+    .logo {
+        
+        padding-top: 20px;
+        
+    }
+    .logo img {
+        width: 50%;
+    }
+    .logo span {
+        font-size: 1rem;
+    }
+    .iputBox {
+        width: 80%;
+        margin: auto;
+        margin-top: 0px;
+        /* border: 1px solid #000; */
+    }
+
+    .inputfields {
+        width: 100%;
+        /* border: 1px solid #000; */
+        position: relative;
+        overflow-x: hidden;
+        border: 1px solid rgba(214, 212, 212,0.9);
+        border-radius: 10px;
+    }
+
+    .inputfields input{
+        width: inherit;
+        border: none;
+    }
+
+    .linkBox{
+      width: 100%;
+      justify-content: space-between;
+
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .rightBox h3{
+        font-size: 0.7rem;
+        color: #6e6e6e;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    
+}
